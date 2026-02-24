@@ -39,11 +39,11 @@ const projects = [
     },
     {
         id: 5,
-        title: "Music Playlist Curator",
-        date: "2025-11-10",
-        displayDate: "Nov 2025",
-        description: "A Spotify integration project that curates playlists based on mood and genre preferences. Explored API integration and data handling.",
-        image: "https://via.placeholder.com/400x300/333333/ffffff?text=Spotify+API",
+        title: "Interactive Investment Tracker Dashboard",
+        date: "2026-02-24",
+        displayDate: "Feb 2026",
+        description: "A dashboard that visualizes investment performance over time. Built with Javascript to provide interactive design charts and real-time data updates.",
+        image: "https://srimaja-wealth-portfolio.vercel.app/",
         link: "project.html"
     }
 ];
