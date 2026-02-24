@@ -1,103 +1,50 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radya | Project Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="landing-body-pro">
+<body>
 
-    <div class="aurora-bg">
-        <div class="aurora-glow blue"></div>
-        <div class="aurora-glow red"></div>
-        <div class="aurora-glow yellow"></div>
-        <div class="aurora-glow green"></div>
-    </div>
-
-    <nav class="nav-pro">
-        <div class="logo-pro">Radya<span class="dot">.</span></div>
-        
-        <div class="theme-switch-wrapper glass-panel-sm">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>
-            <span class="mode-label">Dark Mode</span>
-        </div>
-    </nav>
-
-    <main class="hero-pro" style="height: auto; padding: 4rem 20px 8rem 20px;">
-        <div class="hero-content-pro">
-            
-            <div class="profile-glow-container">
-                <img src="/radya.png" alt="Radya Profile" class="profile-img-pro">
+    <section class="hero-section">
+        <div class="profile-container">
+            <div class="neon-circle">
+                <img src="/radya.png" alt="Radya Profile" class="profile-img">
             </div>
+            <h1 class="hero-text">HELLO! I'M RADYA, WELCOME TO MY PROJECT PORTFOLIO</h1>
             
-            <div class="badge-pro" style="margin-top: 2.5rem;">
-                <i class="fas fa-code" style="color: #4285F4;"></i> Front-End & Automation Engineer
-            </div>
-            
-            <h1 class="title-pro" style="font-size: 5rem; line-height: 1.1;">
-                Hello! I'm <br>
-                <span class="gradient-text-pro">Radya.</span>
-            </h1>
-            
-            <p class="subtitle-pro">
-                Welcome to my project portfolio. I build modern, scalable, and visually stunning web applications engineered for the future.
-            </p>
-            
-            <div class="action-pro" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                <button onclick="scrollToProjects()" class="btn-glow-pro" style="border: none; cursor: pointer; font-family: inherit;">
-                    See My Projects <i class="fas fa-arrow-down"></i>
-                </button>
-                <a href="https://www.linkedin.com/in/radyabp/" target="_blank" class="btn-nav-login" style="padding: 1.2rem 2.5rem; font-size: 1.2rem; display: flex; align-items: center; gap: 0.8rem;">
-                    <i class="fab fa-linkedin" style="color: #4285F4;"></i> LinkedIn Profile
-                </a>
+            <div class="hero-controls">
+                <a href="https://www.linkedin.com/in/radyabp/" target="_blank" class="btn btn-primary">See my Profile</a>
+                <button onclick="scrollToProjects()" class="btn btn-secondary">See my Project</button>
+                
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                    <span class="mode-label">Mode</span>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <section id="projects" style="position: relative; z-index: 10; padding: 5rem 5%; max-width: 1400px; margin: 0 auto;">
-        <h2 class="logo-pro" style="font-size: 3.5rem; text-align: center; margin-bottom: 4rem;">Featured <span class="gradient-text-pro">Projects</span></h2>
+    <section id="projects" class="portfolio-section">
+        <h2 class="section-title">Project Portfolio</h2>
         
-        <div class="project-grid" id="project-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+        <div class="project-grid" id="project-grid">
             </div>
     </section>
 
-    <footer class="footer-pro">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <div class="logo-pro small-footer">Radya<span class="dot">.</span></div>
-                <p>Building the future of web applications with precision and elegance. Constantly exploring modern UI/UX and system architecture.</p>
-            </div>
-
-            <div class="footer-links-col">
-                <h4>Navigation</h4>
-                <a href="#" onclick="window.scrollTo(0,0); return false;">Home</a>
-                <a href="#projects" onclick="scrollToProjects(); return false;">Projects Portfolio</a>
-                <a href="#">Resume / CV</a>
-            </div>
-
-            <div class="footer-links-col">
-                <h4>Connect</h4>
-                <a href="https://www.linkedin.com/in/radyabp/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2026 Radya. All Rights Reserved.</p>
-            <div class="footer-legal">
-                 <a href="#">Built with HTML, CSS & JS</a>
-            </div>
-        </div>
+    <footer>
+        <p>&copy; 2026 Radya. All Rights Reserved.</p>
     </footer>
 
     <script>
+        // Fungsi scroll ke section project
         function scrollToProjects() {
             document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
         }
