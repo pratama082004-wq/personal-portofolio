@@ -394,10 +394,78 @@ input:checked + .slider:before {
 .detail-desc { font-size: 1.1rem; margin-bottom: 40px; max-width: 100%; }
 
 /* --- FOOTER --- */
-footer {
-    text-align: center; padding: 20px; background-color: #000;
-    color: var(--text-secondary); font-size: 0.8rem; margin-top: 50px;
-    border-top: 2px solid transparent;
-    background-image: linear-gradient(#000, #000), var(--neon-gradient);
-    background-origin: border-box; background-clip: content-box, border-box;
+/* --- MODERN NEON FOOTER --- */
+.neon-footer {
+    position: relative;
+    background-color: var(--card-bg); /* Menyatu dengan warna card */
+    text-align: center;
+    padding: 40px 20px 20px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+/* Garis atas menyala (Crisp Glowing Line) */
+.neon-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px; /* Super tipis dan elegan */
+    background: var(--neon-gradient);
+    box-shadow: 0 0 15px rgba(41, 121, 255, 0.8), 0 0 30px rgba(255, 23, 68, 0.6);
+}
+
+.footer-logo {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    background: none; /* Reset gradient shift biar solid */
+    -webkit-text-fill-color: var(--text-primary);
+}
+
+.footer-logo span {
+    color: var(--neon-red);
+    text-shadow: 0 0 15px var(--neon-red);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+/* Efek menyala saat di-hover */
+.social-links a:hover {
+    color: var(--neon-blue);
+    transform: translateY(-5px);
+    text-shadow: 0 0 15px var(--neon-blue);
+}
+
+.neon-footer p {
+    font-size: 0.85rem;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+/* Animasi detak jantung kecil di footer */
+.neon-heart {
+    color: var(--neon-red);
+    display: inline-block;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); text-shadow: 0 0 5px var(--neon-red); }
+    50% { transform: scale(1.3); text-shadow: 0 0 15px var(--neon-red); }
 }
