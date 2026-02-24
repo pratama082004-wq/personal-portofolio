@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radya | Project Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="hero-section">
+        <div class="profile-container">
+            <div class="neon-circle">
+                <img src="/radya.png" alt="Radya Profile" class="profile-img">
+            </div>
+            <h1 class="hero-text">HELLO! I'M RADYA, WELCOME TO MY PROJECT PORTFOLIO</h1>
+            
+            <div class="hero-controls">
+                <a href="https://www.linkedin.com/in/radyabp/" target="_blank" class="btn btn-primary">See my Profile</a>
+                <button onclick="scrollToProjects()" class="btn btn-secondary">See my Project</button>
+                
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                    <span class="mode-label">Mode</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="portfolio-section">
+        <h2 class="section-title">Project Portfolio</h2>
+        
+        <div class="project-grid" id="project-grid">
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Radya. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
