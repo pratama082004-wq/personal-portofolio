@@ -43,8 +43,8 @@ const projects = [
         date: "2026-02-24",
         displayDate: "Feb 2026",
         description: "A dashboard that visualizes investment performance over time. Built with Javascript to provide interactive design charts and real-time data updates.",
-        image: "https://srimaja-wealth-portfolio.vercel.app/",
-        link: "project.html"
+        image: "/intinvest/main.png",
+        link: "intinvest.html"
     }
 ];
 
