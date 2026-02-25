@@ -35,7 +35,9 @@ const projects = [
         displayDate: "Nov 2025",
         description: "A responsive, Cyberpunk-themed web portfolio to showcase skills in Software Engineering and AI. Built using modern HTML5, CSS3 Grid, and JavaScript.",
         image: "https://via.placeholder.com/400x300/bc13fe/000000?text=Portfolio",
-        link: "project.html"
+        link: "project.html",
+        // 👇 TAMBAHKAN BARIS INI 👇
+        externalLink: "https://srimaja-wealth-portfolio.vercel.app/"
     },
     {
         id: 5,
@@ -44,7 +46,7 @@ const projects = [
         displayDate: "Feb 2026",
         description: "A dashboard that visualizes investment performance over time. Built with Javascript to provide interactive design charts and real-time data updates.",
         image: "/intinvest/main.png",
-        link: "intinvest.html"
+        link: "project.html"
     }
 ];
 
@@ -128,7 +130,7 @@ let slideIndex = 1;
 function initSlider() {
     showSlides(slideIndex);
     
-    // Optional: Load specific project data based on ID
+    // Load specific project data based on ID
     const currentId = localStorage.getItem('currentProjectId');
     if(currentId) {
         const project = projects.find(p => p.id == currentId);
@@ -136,6 +138,19 @@ function initSlider() {
             document.getElementById('detail-title').innerText = project.title;
             document.getElementById('detail-date').innerText = project.displayDate;
             document.getElementById('detail-desc').innerText = project.description;
+            
+            // 👇 INI LOGIKA BARU UNTUK TOMBOLNYA 👇
+            const detailLinkBtn = document.getElementById('detail-link');
+            
+            // Cek apakah project tersebut punya externalLink
+            if (project.externalLink) {
+                detailLinkBtn.href = project.externalLink;
+                detailLinkBtn.target = "_blank"; // Supaya link terbuka di tab baru
+                detailLinkBtn.style.display = "inline-block"; // Pastikan tombol terlihat
+            } else {
+                // Kalau tidak ada linknya (misal project belum jadi), sembunyikan tombolnya
+                detailLinkBtn.style.display = "none";
+            }
         }
     }
 }
