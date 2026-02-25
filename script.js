@@ -35,9 +35,7 @@ const projects = [
         displayDate: "Nov 2025",
         description: "A responsive, Cyberpunk-themed web portfolio to showcase skills in Software Engineering and AI. Built using modern HTML5, CSS3 Grid, and JavaScript.",
         image: "https://via.placeholder.com/400x300/bc13fe/000000?text=Portfolio",
-        link: "project.html",
-        // 👇 TAMBAHKAN BARIS INI 👇
-        externalLink: "https://srimaja-wealth-portfolio.vercel.app/"
+        link: "project.html"
     },
     {
         id: 5,
@@ -46,7 +44,9 @@ const projects = [
         displayDate: "Feb 2026",
         description: "A dashboard that visualizes investment performance over time. Built with Javascript to provide interactive design charts and real-time data updates.",
         image: "/intinvest/main.png",
-        link: "project.html"
+        link: "project.html",
+         // 👇 TAMBAHKAN BARIS INI 👇
+        externalLink: "https://srimaja-wealth-portfolio.vercel.app/"
     }
 ];
 
