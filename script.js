@@ -30,12 +30,20 @@ const projects = [
     },
     {
         id: 4,
-        title: "Personal Branding Portfolio",
-        date: "2025-11-12",
-        displayDate: "Nov 2025",
-        description: "A responsive, Cyberpunk-themed web portfolio to showcase skills in Software Engineering and AI. Built using modern HTML5, CSS3 Grid, and JavaScript.",
-        image: "https://via.placeholder.com/400x300/bc13fe/000000?text=Portfolio",
-        link: "project.html"
+        title: "Srimaja Sync | AI Focus Hub",
+        date: "2026-02-25",
+        displayDate: "Feb 2026",
+        description: "An advanced productivity dashboard featuring a functional Pomodoro timer, interactive Kanban task management, and real-time focus analytics using Chart.js. Designed with a custom Google Cinematic Pro dark theme.",
+        image: "images/sync-1.png",
+        link: "project.html",
+         // 👇 TAMBAHKAN BARIS INI 👇
+        externalLink: "https://srimaja-sync-app.vercel.app/",
+        // 👇 TAMBAHKAN BARIS INI (Sesuaikan dengan nama gambarmu) 👇
+        sliderImages: [
+            "images/sync-1.png",
+            "images/sync-2.png",
+            "images/sync-3.png"
+        ]
     },
     {
         id: 5,
@@ -43,7 +51,7 @@ const projects = [
         date: "2026-02-24",
         displayDate: "Feb 2026",
         description: "A dashboard that visualizes investment performance over time. Built with Javascript to provide interactive design charts and real-time data updates.",
-        image: "/intinvest/main.png",
+        image: "images/srimaja-1.png",
         link: "project.html",
          // 👇 TAMBAHKAN BARIS INI 👇
         externalLink: "https://srimaja-wealth-portfolio.vercel.app/",
