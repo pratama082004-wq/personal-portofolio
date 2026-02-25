@@ -46,7 +46,13 @@ const projects = [
         image: "/intinvest/main.png",
         link: "project.html",
          // 👇 TAMBAHKAN BARIS INI 👇
-        externalLink: "https://srimaja-wealth-portfolio.vercel.app/"
+        externalLink: "https://srimaja-wealth-portfolio.vercel.app/",
+        // 👇 TAMBAHKAN BARIS INI (Sesuaikan dengan nama gambarmu) 👇
+        sliderImages: [
+            "images/srimaja-1.png",
+            "images/srimaja-2.png",
+            "images/srimaja-3.png"
+        ]
     }
 ];
 
@@ -128,8 +134,6 @@ function goToOverview(id) {
 let slideIndex = 1;
 
 function initSlider() {
-    showSlides(slideIndex);
-    
     // Load specific project data based on ID
     const currentId = localStorage.getItem('currentProjectId');
     if(currentId) {
@@ -139,20 +143,40 @@ function initSlider() {
             document.getElementById('detail-date').innerText = project.displayDate;
             document.getElementById('detail-desc').innerText = project.description;
             
-            // 👇 INI LOGIKA BARU UNTUK TOMBOLNYA 👇
+            // --- LOGIKA TOMBOL VIEW PROJECT ---
             const detailLinkBtn = document.getElementById('detail-link');
-            
-            // Cek apakah project tersebut punya externalLink
             if (project.externalLink) {
                 detailLinkBtn.href = project.externalLink;
-                detailLinkBtn.target = "_blank"; // Supaya link terbuka di tab baru
-                detailLinkBtn.style.display = "inline-block"; // Pastikan tombol terlihat
+                detailLinkBtn.target = "_blank";
+                detailLinkBtn.style.display = "inline-block";
             } else {
-                // Kalau tidak ada linknya (misal project belum jadi), sembunyikan tombolnya
                 detailLinkBtn.style.display = "none";
+            }
+
+            // --- LOGIKA BARU UNTUK SLIDER GAMBAR ---
+            const sliderWrapper = document.getElementById('slider-wrapper');
+            const sliderContainer = document.querySelector('.slider-container');
+            
+            // Cek apakah project ini punya gambar untuk slider
+            if (project.sliderImages && project.sliderImages.length > 0) {
+                sliderContainer.style.display = "block"; // Tampilkan container
+                
+                // Masukkan gambar ke HTML
+                sliderWrapper.innerHTML = project.sliderImages.map((imgUrl, index) => {
+                    // Gambar pertama langsung ditampilkan (dikasih class 'active')
+                    let activeClass = index === 0 ? 'active' : '';
+                    return `<img src="${imgUrl}" class="slide ${activeClass}">`;
+                }).join('');
+            } else {
+                // Kalau project belum punya gambar, sembunyikan area slidernya biar rapi
+                sliderContainer.style.display = "none";
             }
         }
     }
+    
+    // Mulai jalankan fungsi slider-nya
+    slideIndex = 1;
+    showSlides(slideIndex);
 }
 
 function moveSlide(n) {
