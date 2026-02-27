@@ -12,12 +12,20 @@ const projects = [
     },
     {
         id: 2,
-        title: "Srimaja Investment Fund",
-        date: "2026-01-17",
-        displayDate: "Jan 2026",
-        description: "A personal investment fund project derived from the Sriwijaya and Majapahit empires. Focuses on analyzing macroeconomics and crypto markets (Bitcoin) to manage a diversified portfolio.",
-        image: "https://via.placeholder.com/400x300/bc13fe/000000?text=Srimaja",
-        link: "project.html"
+        title: "Srimaja Nexus | ROG Edition",
+        date: "2026-02-17",
+        displayDate: "Feb 2026",
+        description: "The ultimate cyberpunk productivity hub. Featuring a functional Task Matrix and Focus Engine with sharp RGB border-flow animations and ROG-themed UI.",
+        image: "images/nexus-1.png",
+        link: "project.html",
+         // 👇 TAMBAHKAN BARIS INI 👇
+        externalLink: "https://srimaja-nexus.vercel.app/",
+        // 👇 TAMBAHKAN BARIS INI (Sesuaikan dengan nama gambarmu) 👇
+        sliderImages: [
+            "images/nexus-1.png",
+            "images/nexus-2.png",
+            "images/nexus-3.png"
+        ]
     },
     {
         id: 3,
@@ -27,6 +35,7 @@ const projects = [
         description: "An immersive AI simulation featuring real-time laser scanning and terminal logs for automated defect detection. Built to demonstrate advanced Computer Vision concepts and industrial automation interfaces.",
         image: "images/vision-1.png",
         link: "project.html",
+         // 👇 TAMBAHKAN BARIS INI 👇
         externalLink: "https://srimaja-vision-ai.vercel.app/",
         // 👇 TAMBAHKAN BARIS INI (Sesuaikan dengan nama gambarmu) 👇
         sliderImages: [
