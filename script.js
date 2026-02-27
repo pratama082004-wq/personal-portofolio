@@ -3,12 +3,20 @@
 const projects = [
     {
         id: 1,
-        title: "TOYOTA SMART-VISOR",
-        date: "2026-06-15", // YYYY-MM-DD for sorting
-        displayDate: "June 2026",
-        description: "An IoT-based system for visualizing vehicle damage in real-time. Created for Toyota Motor Manufacturing Indonesia, this project utilizes Computer Vision (YOLO) to automate inspection lines.",
-        image: "https://via.placeholder.com/400x300/00f3ff/000000?text=Smart-Visor",
-        link: "project.html"
+        title: "Srimaja Wealth Terminal",
+        date: "2026-02-27",
+        displayDate: "Feb 2026",
+        description: "A financial asset terminal featuring an asymmetrical split-screen layout and a futuristic floating dock navigation. 100% functional crypto deposit simulation and real-time market price tracking.",
+        image: "images/wealth-1.png",
+        link: "project.html",
+         // 👇 TAMBAHKAN BARIS INI 👇
+        externalLink: "https://srimaja-wealth-.vercel.app/",
+        // 👇 TAMBAHKAN BARIS INI (Sesuaikan dengan nama gambarmu)👇
+        sliderImages: [
+            "images/wealth-1.png",
+            "images/wealth-2.png",
+            "images/wealth-3.png"
+        ]
     },
     {
         id: 2,
@@ -76,7 +84,25 @@ const projects = [
             "images/srimaja-2.png",
             "images/srimaja-3.png"
         ]
+    },
+    {
+        id: 6,
+        title: "Srimaja Automata SCADA",
+        date: "2026-02-27",
+        displayDate: "Feb 2026",
+        description: "Industrial IoT monitoring node with real-time telemetry sensor simulation and persistent control panel. Designed with unique varied ROG-style shapes and sharp RGB flow accents.",
+        image: "images/automata-1.png",
+        link: "project.html",
+         // 👇 TAMBAHKAN BARIS INI 👇
+        externalLink: "https://srimaja-automata.vercel.app/",
+        // 👇 TAMBAHKAN BARIS INI (Sesuaikan dengan nama gambarmu) 👇
+        sliderImages: [
+            "images/automata-1.png",
+            "images/automata-2.png",
+            "images/automata-3.png"
+        ]
     }
+
 ];
 
 /* --- MAIN INITIALIZATION --- */
