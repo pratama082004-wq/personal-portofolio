@@ -21,12 +21,18 @@ const projects = [
     },
     {
         id: 3,
-        title: "Astra Otoparts Internship",
-        date: "2026-02-01",
+        title: "Srimaja Vision | AI Simulator",
+        date: "2026-02-27",
         displayDate: "Feb 2026",
-        description: "Professional software engineering internship focusing on automation systems. Developed internal tools to streamline production workflows and gained hands-on industry experience.",
-        image: "https://via.placeholder.com/400x300/00f3ff/000000?text=Astra+Otoparts",
-        link: "project.html"
+        description: "An immersive AI simulation featuring real-time laser scanning and terminal logs for automated defect detection. Built to demonstrate advanced Computer Vision concepts and industrial automation interfaces.",
+        image: "images/vision-1.png",
+        link: "project.html",
+        externalLink: "https://srimaja-vision-ai.vercel.app/",
+        // 👇 TAMBAHKAN BARIS INI (Sesuaikan dengan nama gambarmu) 👇
+        sliderImages: [
+            "images/vision-1.png",
+            "images/vision-2.png"
+        ]
     },
     {
         id: 4,
