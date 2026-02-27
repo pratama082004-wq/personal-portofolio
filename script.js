@@ -12,7 +12,7 @@ const projects = [
     },
     {
         id: 2,
-        title: "Srimaja Nexus | ROG Edition",
+        title: "Srimaja Nexus",
         date: "2026-02-17",
         displayDate: "Feb 2026",
         description: "The ultimate cyberpunk productivity hub. Featuring a functional Task Matrix and Focus Engine with sharp RGB border-flow animations and ROG-themed UI.",
