@@ -91,15 +91,15 @@ const projects = [
         date: "2026-02-27",
         displayDate: "Feb 2026",
         description: "Industrial IoT monitoring node with real-time telemetry sensor simulation and persistent control panel. Designed with unique varied ROG-style shapes and sharp RGB flow accents.",
-        image: "images/automata-1.png",
+        image: "images/auto-1.png",
         link: "project.html",
          // 👇 TAMBAHKAN BARIS INI 👇
         externalLink: "https://srimaja-automata.vercel.app/",
         // 👇 TAMBAHKAN BARIS INI (Sesuaikan dengan nama gambarmu) 👇
         sliderImages: [
-            "images/automata-1.png",
-            "images/automata-2.png",
-            "images/automata-3.png"
+            "images/auto-1.png",
+            "images/auto-2.png",
+            "images/auto-3.png"
         ]
     }
 
